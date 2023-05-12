@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
-	<title>HomePage</title>
+	<title>PortfolioPage</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230512125516">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230512133102">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,19 +14,167 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header">
+		<header class="header" data-scroll="120" data-scroll-show>
 			<div class="header__container">
+
+				<div class="header__menu menu">
+					<h1><a class="menu__logo" href="home.html"><span>Артур</span></a></h1>
+					<div class="menu__items">
+
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a data-goto-header data-goto=".about-me" href="#" class="menu__link">Обо мне</a></li>
+								<li class="menu__item"><a data-goto-header data-goto=".skills" href="#" class="menu__link">Навыки</a></li>
+								<li class="menu__item"><a data-goto-header data-goto=".portfolio" href="#" class="menu__link">Портфолио</a></li>
+								<li class="menu__item"><a data-goto-header data-goto=".contacts" href="#" class="menu__link">Контакты</a></li>
+							</ul>
+						</nav>
+
+						<div class="menu__buttons">
+
+							<div class="btn-indicator">
+								<button class="btn-indicator__sun change-theme _icon-moon" id="js-theme-button" type="button"></button>
+							</div>
+							<div class="menu__burger">
+								<button type="button" class="menu__icon icon-menu"><span></span></button>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+
 			</div>
 		</header>
 		<main class="page">
 
+			<section class="page__hero hero" data-fullscreen>
+				<div class="hero__container">
+					<div class="hero__body">
+
+						<div class="hero__heading heading">
+							<h2 class="heading__label label">
+								<span class="label__pop">П</span>
+								<span class="label__pop">р</span>
+								<span class="label__pop">и</span>
+								<span class="label__pop">в</span>
+								<span class="label__pop">е</span>
+								<span class="label__pop">т</span>
+								<span class="label__pop">!</span>
+								<br>
+								<span class="label__pop label__pop_mr">Я</span>
+
+								<span class="label__pop label__pop_red">А</span>
+								<span class="label__pop label__pop_red">р</span>
+								<span class="label__pop label__pop_red">т</span>
+								<span class="label__pop label__pop_red">у</span>
+								<span class="label__pop label__pop_red">р</span>
+								<span class="label__pop label__pop_red label__pop_mr">,</span>
+								<br>
+								<span class="label__pop">w</span>
+								<span class="label__pop">e</span>
+								<span class="label__pop label__pop_mr">b</span>
+								<span class="label__pop">d</span>
+								<span class="label__pop">e</span>
+								<span class="label__pop">v</span>
+								<span class="label__pop">e</span>
+								<span class="label__pop">l</span>
+								<span class="label__pop">o</span>
+								<span class="label__pop">p</span>
+								<span class="label__pop">e</span>
+								<span class="label__pop">r</span>
+							</h2>
+							<div class="heading__value">
+								<p class="heading__sub-text">
+									Front End Developer
+								</p>
+							</div>
+						</div>
+
+						<div class="block-btn">
+							<a data-goto=".contacts" class="block-btn__link" href="#">Контакты</a>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<section class="page__about-me about-me" data-watch="navigator" data-watch-threshold="0.5">
+				<div class="about-me__container">
+
+					<div class="about-me__title title">
+						<h3 class="title__label">
+							<span class="label__pop">О</span>
+							<span class="label__pop">б</span>
+							<span class="label__pop label__pop_mr">о</span>
+							<span class="label__pop">м</span>
+							<span class="label__pop">н</span>
+							<span class="label__pop">е</span>
+						</h3>
+						<h3 class="title__value"></h3>
+					</div>
+
+					<div class="about-me__body">
+						<div class="about-me__description">
+							<div class="about-me__heading" data-watch>
+								<p>
+									Приветствую Вас <br> на своем сайте-портфолио!
+								</p>
+							</div>
+							<div class="about-me__text" data-watch>
+								<p>
+									Я Артур, живу в Минске. Занимаюсь HTML-версткой сайтов. Делаю максимально качественную кроссбраузерную, адаптивную и валидную верстку.
+									В процессе работы над проектом для ускорения верстки я использую сборщик Gulp/Webpack.
+									Применяю препроцессор SASS, использую БЭМ. По желанию клиента делаю Pixel Perfect. Люблю использовать чистый Java Script, Flex и Grid.
+									Я не использую устаревшие библиотеки и фреймворки, так как мир технологий не стоит на месте.
+								</p>
+							</div>
+							<div class="about-me__sub-text" data-watch>
+								<p>
+									Каждый момент я стараюсь узнать что-то новое в технологиях, изучаю и внедряю в свою работу, улучшая качество кода.
+									Если у Вас есть интерес узнать обо мне подробнее просто <a class="contact-link" href="">свяжитесь</a> со мной.
+								</p>
+							</div>
+						</div>
+
+						<div class="skills-bar">
+
+							<ul class="skills-bar__lists">
+								<li class="skills-bar__list">HTML</li><span class="bar"><span class="html" data-watch></span></span> <!-- skill bar 1 -->
+							</ul>
+
+							<ul class="skills-bar__lists">
+								<li class="skills-bar__list">CSS</li><span class="bar"><span class="scss" data-watch></span></span><!-- skill bar 2 -->
+							</ul>
+
+							<ul class="skills-bar__lists">
+								<li class="skills-bar__list">JAVASCRIPT</li><span class="bar"><span class="javascript" data-watch></span></span><!-- skill bar 3 -->
+							</ul>
+
+							<ul class="skills-bar__lists">
+								<li class="skills-bar__list">Flex Box</li><span class="bar"><span class="flexbox" data-watch></span></span><!-- skill bar 4 -->
+							</ul>
+
+							<ul class="skills-bar__lists">
+								<li class="skills-bar__list">Grid layout</li><span class="bar"><span class="grid" data-watch></span></span><!-- skill bar 5 -->
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
+				<div class="footer__body">
+					<div class="footer__copyright">Copyright © A. A. Golubev 2023 Portfolio Web Developer</div>
+					<div class="footer__text">All rights reserved</div>
+				</div>
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230512125516"></script>
+	<script src="js/app.min.js?_v=20230512133102"></script>
 </body>
 
 </html>

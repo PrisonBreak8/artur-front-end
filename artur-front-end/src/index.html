@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My-Page</title>
+
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		<header class="rootpage">
+			<div class="header__container">
+
+				<!-- ========================================== Info Block Start ===================================================== -->
+				<div class="info">
+					<div class="sub-heading">выполнил верстку
+						<span class="nik-name">Artur Golubev</span>
+					</div>
+
+					<h1 class="heading-text">Верстка Сайта
+						<span class="my-name-project">
+							`Artur-Front-End`
+						</span>
+					</h1>
+				</div>
+
+				<!-- ========================================== ГОТОВЫЕ СТРАНИЦЫ LINKS ===================================================== -->
+				<div class="ready-page">
+					<div class="ready-block">
+						<h2 class="ready-pages">Готовые страницы:</h2>
+						<ul class="rootpage__list">
+							<li class="rootpage-link-page"><a class="page-numbers secondary-btn" target="_blank" href="home.html"><span class="number">1.</span>Home</a></li>
+							<!--<li class="rootpage-link-page"><a class="page-numbers secondary-btn" target="_blank" href="portfolio.html"><span class="number">2.</span>Portfolio</a></li>-->
+						</ul>
+					</div>
+
+					<div class="loader">
+						<div class="bubble-1"></div>
+						<div class="bubble-2"></div>
+					</div>
+
+					<!-- ========================================== ГОТОВЫЕ ПОПАПЫ LINKS ===================================================== -->
+					<!--<div class="popup-block">
+						<h2 class="ready-popup">Попапы:</h2>
+						<ul class="rootpage__list">
+							<li class="rootpage-link-page"><a class='popup page-numbers secondary-btn' target="_blank" href="home.html#form-popup"><span class="number">1.</span>Попап</a></li>
+							<li class="rootpage-link-page"><a class='popup page-numbers secondary-btn' target="_blank" href="home.html#form-popup"><span class="number">2.</span>Попап</a></li>
+						</ul>
+					</div>-->
+				</div>
+
+				<!-- ========================================== Social Block Start ===================================================== -->
+				<div class="my-contacts">
+					<div class="my-contacts__label">
+						<h2 class="my-contacts__title">Контакты:</h2>
+
+						<div class="my-contacts__items">
+							<svg class="svg">
+								<rect class="rect"></rect>
+							</svg>
+
+							<div class="my-contacts__item">
+								<a href="https://prisonbreak8.github.io/portfolio-cv/portfolio-cv/" target="_blank">
+									<img class="my-contacts__icon my-contacts__icon_logo" src="@img/dont-tuch/logo.png" alt="logo">
+								</a>
+								<p class="my-contacts__description">Cайт:
+									<a class="my-contacts__link" href="https://prisonbreak8.github.io/portfolio-cv/portfolio-cv/" target="_blank">Artur Golubev</a>
+								</p>
+							</div>
+
+							<div class="my-contacts__item">
+								<a href="https://t.me/ArturGolubiev" target="_blank">
+									<img class="my-contacts__icon" src="@img/dont-tuch/telegram.svg" alt="telegram">
+								</a>
+								<p class="my-contacts__description">Телеграм:
+									<a class="my-contacts__link" href="https://t.me/ArturGolubiev" target="_blank">Artur Golubev</a>
+								</p>
+							</div>
+
+							<div class="my-contacts__item">
+								<a href="https://www.linkedin.com/in/artur-holubev-882491231/" target="_blank">
+									<img class="my-contacts__icon" src="@img/dont-tuch/linked-In.svg" alt="linkedin">
+								</a>
+								<p class="my-contacts__description">Linkedin:
+									<a class="my-contacts__link" href="https://www.linkedin.com/in/artur-holubev-882491231/" target="_blank">Artur Golubev</a>
+								</p>
+							</div>
+
+							<div class="my-contacts__item">
+								<a href="https://github.com/PrisonBreak8" target="_blank">
+									<img class="my-contacts__icon" src="@img/dont-tuch/github.svg" alt="Git Hub">
+								</a>
+								<p class="my-contacts__description">Github:
+									<a class="my-contacts__link" href="https://github.com/PrisonBreak8" target="_blank">Artur Golubev</a>
+								</p>
+							</div>
+
+							<div class="my-contacts__item">
+								<a href="mailto:golubev.artur.1986@gmail.com">
+									<img class="my-contacts__icon" src="@img/dont-tuch/mail.svg" alt="mail">
+								</a>
+								<p class="my-contacts__description">Почта:
+									<a class="my-contacts__link" href="mailto:golubev.artur.1986@gmail.com">golubev.artur.1986@gmail.com</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- ========================================== https://codepen.io/your-work/ Block Start ===================================================== -->
+				<a class="waviy" href="https://codepen.io/your-work/" target="_blank">
+					<span style="--i:1">c</span>
+					<span style="--i:2">o</span>
+					<span style="--i:3">d</span>
+					<span style="--i:4">e</span>
+					<span style="--i:5">p</span>
+					<span style="--i:6">e</span>
+					<span style="--i:7">n</span>
+					<span style="--i:8">.</span>
+					<span style="--i:9">.</span>
+					<span style="--i:10">.</span>
+				</a>
+
+			</div>
+		</header>
+
+	</div>
+
+</body>
+
+<style>
+	/* ==================== GOOGLE FONTS ========================================================================================================== */
+	@charset "UTF-8";
+
+	@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+	/* ==================== RESET LIST ========================================================================================================== */
+	*,
+	*::before,
+	*::after {
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		box-sizing: border-box;
+	}
+
+	html,
+	body {
+		min-height: 100vh;
+		margin: 0;
+		padding: 0;
+		min-width: 320px;
+	}
+
+	body {
+		font-family: 'Inter', sans-serif;
+		font-weight: 400;
+		margin: 0 auto;
+		width: 100%;
+		height: 100%;
+		background-color: #1d1d1dff;
+		line-height: 1;
+	}
+
+	a {
+		text-decoration: none;
+		color: inherit;
+	}
+
+	ul li {
+		list-style: none;
+	}
+
+	img {
+		vertical-align: top;
+	}
+
+	/* ==================== GLOBAL STYLES ========================================================================================================== */
+	[class*="__container"] {
+		padding: 25px 25px;
+		height: 100%;
+	}
+
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.rootpage {
+		min-height: 100vh;
+	}
+
+
+	.nik-name {
+		width: 160px;
+		color: #ff8c00;
+	}
+
+	/* ============ CSS Bubble Loader Start ============================ */
+	.loader {
+		position: absolute;
+		width: 15px;
+		height: 15px;
+		top: 35px;
+		left: 100px;
+		animation: spin 2s ease-in-out infinite;
+	}
+
+	.bubble-1,
+	.bubble-2 {
+		width: 10px;
+		height: 10px;
+		border-radius: 100%;
+		background-color: #ff8c00;
+	}
+
+	.bubble-1,
+	.bubble-2 {
+		animation: bounce 2s ease-in-out infinite;
+	}
+
+	.bubble-2 {
+		animation-delay: -1.0s;
+	}
+
+	@keyframes spin {
+		100% {
+			transform: rotate(360deg);
+		}
+	}
+
+	@keyframes bounce {
+
+		0%,
+		100% {
+			transform: scale(0.0);
+		}
+
+		50% {
+			transform: scale(1.0);
+		}
+	}
+
+	/* ==================== START FIRST BlOCK ========================================================================================================== */
+	.info {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.sub-heading {
+		display: inline-flex;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: center;
+		text-transform: capitalize;
+		letter-spacing: 0.4px;
+		column-gap: 15px;
+		row-gap: 10px;
+		font-size: 22px;
+		color: #fcfdff;
+		margin-bottom: 15px;
+	}
+
+	.heading-text {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		column-gap: 15px;
+		line-height: 1.3;
+		font-size: 28px;
+		color: #fcfdff;
+		margin-bottom: 15px;
+		row-gap: 10px;
+		font-weight: 500;
+	}
+
+	.my-name-project {
+		font-size: 30px;
+		letter-spacing: 1.5px;
+		text-align: left;
+		color: #08fdd8ff;
+	}
+
+
+	/* ==================== START TWO BlOCK ========================================================================================================== */
+	.ready-page {
+		position: relative;
+	}
+
+	.ready-block {
+		padding-bottom: 5px;
+	}
+
+	.popup-block {
+		padding-top: 8px;
+	}
+
+	.ready-pages,
+	.ready-popup {
+		font-size: 20px;
+		color: #ff8c00;
+		margin-bottom: 15px;
+		letter-spacing: 1.8px;
+		padding-left: 8px;
+		border-left: 1px solid #08fdd8ff;
+	}
+
+	.ready-pages {}
+
+	.ready-popup {}
+
+	.rootpage-link-page {
+		margin: 0 0 20px 12px;
+	}
+
+	/* ====================Button Link START ======================= */
+	.secondary-btn {
+		position: relative;
+		background-color: transparent;
+		font-weight: 400;
+		font-size: 16px;
+		color: #08fdd8ff;
+		letter-spacing: 2px;
+		border-bottom: 2px solid #fcfdff;
+		padding-bottom: 5px;
+	}
+
+	.number {
+		color: #fcfdff;
+		font-size: 14px;
+		font-weight: 400;
+	}
+
+	.secondary-btn::before {
+		content: "";
+		position: absolute;
+		width: 0;
+		height: 2px;
+		bottom: -2px;
+		left: 0;
+		background-color: #08fdd8ff;
+		transition: 0.3s ease-in-out;
+	}
+
+	.secondary-btn:hover::before {
+		width: 100%;
+	}
+
+	/* ==================== MY CONTACTS BlOCK ========================================================================================================== */
+	.my-contacts {
+		padding-top: 15px;
+		padding-bottom: 25px;
+	}
+
+	.my-contacts__label {}
+
+	.my-contacts__title {
+		color: #ff8c00;
+		margin-bottom: 20px;
+	}
+
+	.my-contacts__items {
+		position: relative;
+		display: inline-grid;
+		gap: 15px;
+		max-width: 370px;
+		width: 100%;
+		padding: 25px;
+	}
+
+	.svg,
+	.svg .rect {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		fill: transparent;
+	}
+
+	.svg .rect {
+		stroke: #fcfdff;
+		stroke-width: 1.5;
+		stroke-dasharray: 371 225;
+		animation: animate 9s linear infinite;
+	}
+
+
+	@keyframes animate {
+		0% {
+			stroke-dashoffset: 600;
+		}
+
+		100% {
+			stroke-dashoffset: 0;
+		}
+	}
+
+	.my-contacts__item {
+		display: flex;
+		align-items: center;
+		column-gap: 10px;
+	}
+
+	.my-contacts__icon {}
+
+	.my-contacts__icon_logo {
+		width: 30px;
+		height: 30px;
+	}
+
+	.my-contacts__description {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		column-gap: 8px;
+		color: #fcfdff;
+		font-size: 14px;
+	}
+
+	.my-contacts__link {
+		position: relative;
+		color: #08fdd8ff;
+		font-size: 16px;
+		padding-bottom: 4px;
+		transition: color .3s cubic-bezier(0.11, 0.7, 0, 1);
+	}
+
+	.my-contacts__link:hover {
+		color: #ff5753ff;
+	}
+
+	.my-contacts__link::after {
+		content: "";
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 2px;
+		bottom: 0;
+		left: 0;
+		background-color: #ff5753ff;
+		transform: scale(0);
+		transition: transform .3s cubic-bezier(0.11, 0.7, 0, 1);
+	}
+
+	.my-contacts__link:hover:after {
+		transform: scale(1);
+	}
+
+	/* ==================== https://codepen.io/your-work/ Block Start ========================================================================================================== */
+	.waviy {
+		position: relative;
+		display: block;
+		-webkit-box-reflect: below -8px linear-gradient(transparent, rgba(0, 0, 0, .2));
+		margin-top: 10px;
+	}
+
+	.waviy span {
+		position: relative;
+		display: inline-block;
+		font-size: 16px;
+		color: #fcfdff;
+		text-transform: uppercase;
+		animation: waviy 1s infinite;
+		animation-delay: calc(.1s * var(--i))
+	}
+
+	@keyframes waviy {
+
+		0%,
+		40%,
+		100% {
+			transform: translateY(0)
+		}
+
+		20% {
+			transform: translateY(-8px)
+		}
+	}
+
+
+	/* ==================== 	@media (max-width: 767px) ========================================================================================================== */
+	@media (max-width: 767px) {
+		[class*="__container"] {
+			padding: 25px 15px;
+		}
+
+		.sub-heading {
+			justify-content: flex-start;
+		}
+
+		.heading-text {
+			justify-content: flex-start;
+		}
+
+		.heading-text {}
+
+		.my-name-project {}
+	}
+
+	@media (max-width: 450px) {}
+</style>
+
+<script src="https://kit.fontawesome.com/8fca0417fa.js" crossorigin="anonymous"></script>
+
+<script>
+	// ========== Ресурс для иконок (https://ionic.io/ionicons) ================
+</script>
+
+
+</html>

@@ -1,5 +1,5 @@
 // Підключення функціоналу "Чортоги Фрілансера"
-import { isMobile, uniqArray, FLS } from "../files/functions.js";
+import { isMobile, uniqArray, ART } from "../files/functions.js";
 import { flsModules } from "../files/modules.js";
 
 // Спостерігач об'єктів [всевидюче око]
@@ -133,7 +133,7 @@ class ScrollWatcher {
 	}
 	// Функція виведення в консоль
 	scrollWatcherLogging(message) {
-		this.config.logging ? FLS(`[Спостерігач]: ${message}`) : null;
+		this.config.logging ? ART(`[Спостерігач]: ${message}`) : null;
 	}
 	// Функція обробки спостереження
 	scrollWatcherCallback(entry, observer) {

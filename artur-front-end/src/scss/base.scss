@@ -1,3 +1,6 @@
 // Общий файл элементов форм
 // Для подключения/отключения стилей конкретного элемента формы смотри base/forms/forms.scss
-//@import "base/forms/forms";
+@import "base/forms/forms";
+
+// Стилі для повноекранного блоку
+@import "base/fullscreen";

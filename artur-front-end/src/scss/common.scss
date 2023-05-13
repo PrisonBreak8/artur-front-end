@@ -325,3 +325,26 @@
 	}
 }
 //========================================================================================================================================================
+::-webkit-scrollbar {
+	width: 0.6rem;
+	border-radius: 0.5rem;
+	background-color: hsl(19deg, 8%, 15%);
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 0.5rem;
+	background-color: hsl(19deg, 8%, 25%);
+}
+::-webkit-scrollbar-thumb:hover {
+	background-color: hsl(19deg, 8%, 35%);
+}
+//========================================================================================================================================================
+.dark-theme::-webkit-scrollbar {
+	background-color: hsl(19deg, 8%, 75%);
+}
+.dark-theme::-webkit-scrollbar-thumb {
+	background-color: hsl(19deg, 8%, 65%);
+}
+.dark-theme::-webkit-scrollbar-thumb:hover {
+	background-color: hsl(19deg, 8%, 55%);
+}
+//========================================================================================================================================================

@@ -201,7 +201,7 @@ export function menuClose() {
 // Модуль "Filter Gallery" https://www.youtube.com/watch?v=ATeWQlY3N04 =======================================================================================================================================================================================================================
 export function filterGallery() {
 	let filterList = document.querySelectorAll('.filter__button');
-	let productBox = document.querySelectorAll('.goods__box');
+	let productBox = document.querySelectorAll('.portfolio-body__box');
 	if (filterList.length) {
 		for (let i = 0; i < filterList.length; i++) {
 			filterList[i].addEventListener('click', function () {

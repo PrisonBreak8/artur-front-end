@@ -1,4 +1,4 @@
-// Подключение шрифта
+//Підключення шрифту
 @mixin font($font_name, $file_name, $weight, $style) {
 	@font-face {
 		font-family: $font_name;
@@ -38,7 +38,7 @@
 	grid-template-columns: repeat(auto-#{$type}, minmax($min, $max));
 }
 
-// Адаптивное свойство (clamp)
+// Адаптивна властивість (clamp)
 @mixin adaptiveValue($property, $startSize, $minSize, $keepSize: 0, $widthFrom: $containerWidth, $widthTo: $minWidth) {
 	@if ($startSize==0) {
 		$startSize: 0.000001;
@@ -54,11 +54,11 @@
 		$widthFrom: $maxWidth;
 	}
 
-	// Брейк-поинты в EM
+	// Брейк-поїнти в EM
 	$widthFromMedia: em($widthFrom);
 	$widthToMedia: em($widthTo);
 
-	// Формула плавающего значения
+	// Формула плаваючого значення
 	// Источник: https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/
 	$slope: math.div(($startSize - $minSize), ($widthFrom - $widthTo));
 	$yIntersection: -$widthTo * $slope + $minSize;
@@ -67,26 +67,26 @@
 	}
 	$flyValue: #{rem($yIntersection)}" + " #{$slope * 100}vw;
 
-	// Получение значения свойства
+	// Отримання значення властивості
 	$propertyValue: #{"clamp(" rem($minSize) "," $flyValue "," rem($startSize) ")"};
 	// Якщо негативні значення
 	@if ($minSize > $startSize) {
 		$propertyValue: #{"clamp(" rem($startSize) "," $flyValue "," rem($minSize) ")"};
 	}
 
-	// Устанавливаем значение по умолчанию
+	// Встановлюємо значення за замовчуванням
 	@if $keepSize != 1 and $keepSize != 3 {
 		@media (min-width: $widthFromMedia) {
 			#{$property}: rem($startSize);
 		}
 	}
-	// Адаптируем размер в промежутке между указанными ширинами вьюпорта
+	// Адаптуємо розмір у проміжку між зазначеними ширинами в'юпорту
 	@media (min-width: $widthToMedia) and (max-width: $widthFromMedia) {
 		// Якщо підтримується clamp();
 		@supports (#{$property}: $propertyValue) {
 			#{$property}: $propertyValue;
 		}
-		// Если не поддерживается clamp();
+		// Якщо не підтримується clamp();
 		@supports not (#{$property}: $propertyValue) {
 			#{$property}: calc(
 				#{rem($minSize)} + #{$addSize} * (100vw - #{rem($widthTo)}) / #{math.div($widthFrom, 16) -

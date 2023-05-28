@@ -74,53 +74,19 @@
 	}
 }
 //========================================================================================================================================================
-.heading {
-	// .heading__label
-	&__label {
-	}
-	// .heading__value
-	&__value {
-	}
-	// .heading__sub-text
-	&__sub-text {
-		position: relative;
-		@include adaptiveValue("font-size", 26, 20);
-		line-height: math.div(34, 26);
-		font-family: Nunito;
-		padding-left: rem(20);
-		opacity: 0.7;
-		&::before,
-		&::after {
-			content: "";
-			position: absolute;
-			font-family: "LaBelleAurore", cursive;
-			font-size: rem(18);
-			opacity: 0.3;
-		}
-		&::before {
-			content: "<p>";
-			left: 4px;
-			top: -23px;
-		}
-		&::after {
-			content: "</p>";
-			left: -6px;
-			margin-top: 40px;
-		}
-	}
-}
 .label {
 	font-weight: 700;
+	display: inline-block;
 	@include adaptiveValue("margin-left", 30, 15);
 	@include adaptiveValue("font-size", 100, 40);
 	span {
 		margin-left: rem(-30);
 		@media (max-width: $tablet) {
-			margin-left: -24px;
+			margin-left: -11px;
 		}
-		@media (max-width: $mobile) {
-			margin-left: -15px;
-		}
+		//@media (max-width: $mobile) {
+		//	margin-left: -15px;
+		//}
 	}
 	// .label__pop
 	&__pop {

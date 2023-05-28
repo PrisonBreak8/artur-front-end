@@ -98,6 +98,23 @@
         bodyUnlock();
         document.documentElement.classList.remove("menu-open");
     }
+    function filterGallery() {
+        let filterList = document.querySelectorAll(".filter__button");
+        let productBox = document.querySelectorAll(".portfolio-body__box");
+        if (filterList.length) for (let i = 0; i < filterList.length; i++) filterList[i].addEventListener("click", (function() {
+            for (let j = 0; j < filterList.length; j++) filterList[j].classList.remove("active");
+            this.classList.add("active");
+            let dataFilter = this.getAttribute("data-filter");
+            for (let k = 0; k < productBox.length; k++) {
+                productBox[k].classList.remove("active");
+                productBox[k].classList.add("hiden");
+                if (productBox[k].getAttribute("data-item") === dataFilter || dataFilter === "all") {
+                    productBox[k].classList.remove("hiden");
+                    productBox[k].classList.add("active");
+                }
+            }
+        }));
+    }
     function functions_ART(message) {
         setTimeout((() => {
             if (window.ART) console.log(message);
@@ -344,10 +361,22 @@
             rubAnim[i].classList.remove("rubberBand");
         }), 1e3);
     }));
+    const root = document.documentElement;
+    const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
+    const marqueeContent = document.querySelector("ul.marquee__content");
+    if (marqueeContent) {
+        root.style.setProperty("--marquee-elements", marqueeContent.children.length);
+        for (let i = 0; i < marqueeElementsDisplayed; i++) marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+    }
+    const goTopBtn = document.querySelector("[data-go-top]");
+    window.addEventListener("scroll", (function() {
+        if (window.scrollY >= 120) goTopBtn.classList.add("active"); else goTopBtn.classList.remove("active");
+    }));
     window["ART"] = true;
     isWebp();
     menuInit();
     fullVHfix();
     pageNavigation();
     headerScroll();
+    filterGallery();
 })();

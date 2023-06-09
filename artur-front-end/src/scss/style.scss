@@ -39,7 +39,7 @@ $containerWidth: $maxWidthContainer + $containerPadding;
 // Брейк-поїнти
 $pc: em($containerWidth); // ПК, ноутбуки, деякі планшети у горизонтальному положенні
 $tablet: em(991.98); // Планшети, деякі телефони в горизонтальному положенні
-$mobile: em(768); // Телефони L
+$mobile: em(768.98); // Телефони L
 $mobileSmall: em(479.98); // Телефони S
 
 // Тип адаптива:
@@ -165,11 +165,22 @@ body {
 // Підключення стилів загальних елементів проекту
 @import "common";
 
-// Підключення стилів окремих блоків
-@import "header";
-@import "footer";
-
 // Підключення стилів окремих сторінок
 @import "home";
 
+// Підключення стилів окремих блоків
+@import "header";
+
+@import "hero";
+
+@import "about-me";
+
+@import "skills";
+
+@import "contacts";
+
 @import "portfolio";
+
+@import "footer";
+
+@import "all-portfolio";

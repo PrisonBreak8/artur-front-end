@@ -794,15 +794,15 @@ body.dark-theme {
 }
 
 .bar {
-  background-color: var(--bgColorDark);
   display: block;
   height: 2px;
   border-radius: 3px;
+  background-color: var(--bgColorDark);
   -webkit-box-shadow: 0 0 5px var(--hoverColorButton);
           box-shadow: 0 0 5px var(--hoverColorButton);
 }
 
-.bar span {
+.bar div {
   height: 2px;
   float: left;
   display: -webkit-box;
@@ -1434,6 +1434,8 @@ body.dark-theme {
      -moz-column-gap: 1.875rem;
           column-gap: 1.875rem;
   row-gap: 1.875rem;
+  -ms-grid-rows: (1fr)[6];
+  grid-template-rows: repeat(6, 1fr);
 }
 
 .card {

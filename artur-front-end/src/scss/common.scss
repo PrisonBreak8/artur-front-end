@@ -198,12 +198,12 @@
 	}
 }
 .bar {
-	background-color: var(--bgColorDark);
 	display: block;
 	height: 2px;
 	border-radius: 3px;
+	background-color: var(--bgColorDark);
 	box-shadow: 0 0 5px var(--hoverColorButton);
-	span {
+	div {
 		height: 2px;
 		float: left;
 		display: flex;

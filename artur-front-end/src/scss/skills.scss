@@ -42,6 +42,7 @@
 		display: grid;
 		column-gap: rem(30);
 		row-gap: rem(30);
+		grid-template-rows: repeat(6, 1fr);
 		@media (min-width: $mobile) {
 			grid-template-columns: repeat(2, 1fr);
 			grid-template-rows: repeat(3, 1fr);

@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230609152521">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230609161522">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -136,37 +136,38 @@
 						<div class="skills-bar">
 							<div class="skills-bar__lists">
 								<div class="skills-bar__list">HTML</div>
-								<div class="bar">
-									<div class="html" data-watch></div>
-								</div> <!-- skill bar 1 -->
+								<ul class="bar">
+									<li class="html" data-watch></li>
+								</ul> <!-- skill bar 1 -->
 							</div>
 
 							<div class="skills-bar__lists">
 								<div class="skills-bar__list">CSS</div>
-								<div class="bar">
-									<div class="scss" data-watch></div>
-								</div><!-- skill bar 2 -->
+								<ul class="bar">
+									<li class="scss" data-watch></li>
+								</ul><!-- skill bar 2 -->
 							</div>
 
 							<div class="skills-bar__lists">
 								<div class="skills-bar__list">JAVASCRIPT</div>
-								<div class="bar">
-									<div class="javascript" data-watch></div>
-								</div><!-- skill bar 3 -->
+								<ul class="bar">
+									<li class="javascript" data-watch></li>
+								</ul><!-- skill bar 3 -->
 							</div>
 
 							<div class="skills-bar__lists">
 								<div class="skills-bar__list">Flex Box</div>
-								<div class="bar">
-									<div class="flexbox" data-watch></div>
-								</div><!-- skill bar 4 -->
+								<ul class="bar">
+									<li class="flexbox" data-watch>
+								</ul>
+								</ul><!-- skill bar 4 -->
 							</div>
 
 							<div class="skills-bar__lists">
 								<div class="skills-bar__list">Grid layout</div>
-								<div class="bar">
-									<div class="grid" data-watch></div>
-								</div><!-- skill bar 5 -->
+								<ul class="bar">
+									<li class="grid" data-watch></li>
+								</ul><!-- skill bar 5 -->
 							</div>
 						</div>
 					</div>
@@ -322,14 +323,14 @@
 
 							<div class="portfolio__item">
 								<div class="portfolio__animation-bg portfolio__animation-bg_01s" data-watch data-watch-once></div>
-								<!--<a class="portfolio-card__link-work" href="https://prisonbreak8.github.io/create/create-app/" target="_blank"></a>-->
-								<figure class="portfolio-card">
+								<article class="portfolio-card">
 									<picture><source srcset="img/my-works/createx-preview.webp" type="image/webp"><img class="portfolio-card__picture" src="img/my-works/createx-preview.png" alt="createx corporate website"></picture>
-									<figcaption class="portfolio-card__figcaption">
+									<div class="portfolio-card__figcaption">
 										<h3 class="portfolio-card__description">Greatex</h3>
 										<h5 class="portfolio-card__sub-description">Design</h5>
-									</figcaption>
-								</figure>
+									</div>
+									<a class="portfolio-card__link-work" href="https://prisonbreak8.github.io/create/create-app/" target="_blank"></a>
+								</article>
 							</div>
 
 							<div class="portfolio__item">
@@ -468,7 +469,7 @@
 
 		<a data-goto=".wrapper" data-go-top class="go-top" href="#" title="Go to Top"></a>
 	</div>
-	<script src="js/app.min.js?_v=20230609152521"></script>
+	<script src="js/app.min.js?_v=20230609161522"></script>
 </body>
 
 </html>

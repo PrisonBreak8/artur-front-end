@@ -2,7 +2,7 @@
 	"name": "art-start",
 	"version": "3.0.0",
 	"description": "Start template with Gulp and Webpack",
-	"author": "FLS",
+	"author": "Artur",
 	"private": true,
 	"license": "",
 	"type": "module",

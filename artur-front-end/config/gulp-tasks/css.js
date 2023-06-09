@@ -20,12 +20,11 @@ export const css = () => {
 			app.plugins.if(
 				app.isBuild,
 				autoprefixer({
-					grid: true,
-					overrideBrowserslist: ["last 3 versions"],
-					cascade: true
+					overrideBrowserslist: ["last 2 versions"],
+					cascade: false
 				})
 			)
-		)
+		) // закрыл чтобы не дописовало -webkit для гридов
 		.pipe(
 			app.plugins.if(
 				app.isWebP,

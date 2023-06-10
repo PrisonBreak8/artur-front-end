@@ -20,7 +20,7 @@ export const css = () => {
 			app.plugins.if(
 				app.isBuild,
 				autoprefixer({
-					overrideBrowserslist: ["last 2 versions"],
+					overrideBrowserslist: ["last 3 versions"],
 					cascade: false
 				})
 			)

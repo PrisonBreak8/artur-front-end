@@ -12,7 +12,7 @@
 */
 
 // Включить/выключить ART (Full Logging System) (в работе)
-window['ART'] = true;
+window['ART'] = false;
 
 // Подключение основного файла стилей
 import "../scss/style.scss";
@@ -26,9 +26,10 @@ import * as flsFunctions from "./files/functions.js";
 /* (i) необходимо для корректного отображения webp с css */
 flsFunctions.isWebp();
 /* Додавання класу touch для HTML якщо браузер мобільний */
-// flsFunctions.addTouchClass();
+flsFunctions.addTouchClass();
 /* Додавання loaded для HTML після повного завантаження сторінки */
-// flsFunctions.addLoadedClass();
+//flsFunctions.addLoadedClass();
+
 /* Модуль для роботи з меню (Бургер) */
 flsFunctions.menuInit();
 /* Враховування плаваючої панелі на мобільних пристроях при 100vh */
@@ -44,6 +45,7 @@ import * as flsForms from "./files/forms/forms.js";
 // Документація: https://template.fls.guru/template-docs/dinamicheskij-adaptiv.html
 //import "./libs/dynamic_adapt.js";
 
+
 // Спостерігач за об'єктами з атрибутом data-watch
 // Документація: https://template.fls.guru/template-docs/modul-nabljudatel-za-poyavleniem-elementa-pri-skrolle.html
 // Сніппет(HTML):
@@ -57,7 +59,7 @@ import * as flsScroll from "./files/scroll/scroll.js";
 flsScroll.pageNavigation();
 
 // Функціонал додавання класів до хедеру під час прокручування
-// Документація: https://template.fls.guru/template-docs/modul-dobavleniya-klassov-k-shapke-pri-prokrutke-stranicy.html
+// Документація: 
 flsScroll.headerScroll();
 
 // ========================================================================================================================================================================================================================================================

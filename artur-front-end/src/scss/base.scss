@@ -5,6 +5,9 @@
 // Стилі для повноекранного блоку
 @import "base/fullscreen";
 
+// Стилі для preloader
+@import "base/preloader";
+
 // Стилі для чуйних картинок (IBG)
 // Сніппет (HTML): ibg (div з картинкою та класами)
 // Сніппет (HTML): ibga (a з картинкою та класами)
@@ -24,7 +27,6 @@
 		object-fit: contain;
 	}
 }
-
 // Адаптивне відео
 %responsiveVideo {
 	position: relative;

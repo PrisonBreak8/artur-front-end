@@ -34,6 +34,9 @@
             return isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows();
         }
     };
+    function addTouchClass() {
+        if (isMobile.any()) document.documentElement.classList.add("touch");
+    }
     function getHash() {
         if (location.hash) return location.hash.replace("#", "");
     }
@@ -372,8 +375,9 @@
     if (goTopBtn) window.addEventListener("scroll", (function() {
         if (window.scrollY >= 120) goTopBtn.classList.add("active"); else goTopBtn.classList.remove("active");
     }));
-    window["ART"] = true;
+    window["ART"] = false;
     isWebp();
+    addTouchClass();
     menuInit();
     fullVHfix();
     pageNavigation();

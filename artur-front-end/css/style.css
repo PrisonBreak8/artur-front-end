@@ -1251,6 +1251,7 @@ body.dark-theme {
   position: relative;
   background-color: var(--bgColorDark);
   /* fallback for old browsers */
+  margin-bottom: 40px;
 }
 
 .hero__container {
@@ -2354,10 +2355,6 @@ body.dark-theme {
     padding-top: 16.25rem;
   }
 
-  .hero {
-    margin-bottom: 10rem;
-  }
-
   .heading__label::after {
     margin-left: 1.25rem;
   }
@@ -2498,10 +2495,6 @@ body.dark-theme {
 
   .hero {
     padding-top: 14.375rem;
-  }
-
-  .hero {
-    margin-bottom: 2.5rem;
   }
 
   .heading__label::after {
@@ -2942,20 +2935,6 @@ body.dark-theme {
     .hero {
       padding-top: calc(
 				14.375rem + 1.875 * (100vw - 20rem) / 55
-			);
-    }
-}
-
-@supports (margin-bottom: clamp( 2.5rem , -0.2272727273rem  +  13.6363636364vw , 10rem )) {
-    .hero {
-      margin-bottom: clamp( 2.5rem , -0.2272727273rem  +  13.6363636364vw , 10rem );
-    }
-}
-
-@supports not (margin-bottom: clamp( 2.5rem , -0.2272727273rem  +  13.6363636364vw , 10rem )) {
-    .hero {
-      margin-bottom: calc(
-				2.5rem + 7.5 * (100vw - 20rem) / 55
 			);
     }
 }

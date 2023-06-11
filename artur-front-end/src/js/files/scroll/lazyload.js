@@ -8,4 +8,4 @@ const lazyMedia = new LazyLoad({
 });
 
 // Оновити модуль
-//lazyMedia.update();
+lazyMedia.update();

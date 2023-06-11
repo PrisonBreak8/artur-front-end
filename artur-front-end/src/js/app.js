@@ -45,6 +45,11 @@ import * as flsForms from "./files/forms/forms.js";
 // Документація: https://template.fls.guru/template-docs/dinamicheskij-adaptiv.html
 //import "./libs/dynamic_adapt.js";
 
+// Ліниве (відкладене) завантаження картинок
+// Документація плагіна: https://github.com/verlok/vanilla-lazyload
+// Сніппет(HTML): imgl
+import './files/scroll/lazyload.js';
+
 
 // Спостерігач за об'єктами з атрибутом data-watch
 // Документація: https://template.fls.guru/template-docs/modul-nabljudatel-za-poyavleniem-elementa-pri-skrolle.html

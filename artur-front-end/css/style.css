@@ -565,23 +565,21 @@ body.dark-theme {
 }
 
 .loading body {
-  opacity: 0;
   visibility: hidden;
+  opacity: 0;
 }
 
 .loaded body {
+  visibility: visible;
+  opacity: 1;
   -webkit-transition: opacity 0.5s ease 0s;
   -o-transition: opacity 0.5s ease 0s;
   transition: opacity 0.5s ease 0s;
-  opacity: 1;
-  visibility: visible;
 }
 
 /* Головний блок */
 
 .fls-preloader {
-  pointer-events: none;
-  z-index: -1;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -596,13 +594,13 @@ body.dark-theme {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  pointer-events: none;
+  z-index: -1;
 }
 
 /* Блок з елементами */
 
 .fls-preloader__body {
-  padding: 0.93rem;
-  max-width: 31.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -610,12 +608,14 @@ body.dark-theme {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding: 15px;
+  max-width: 400px;
 }
 
 /* Блок з лічильником */
 
 .fls-preloader__counter {
-  font-size: 10rem;
+  color: #ff5753;
 }
 
 /* Прогресбар */
@@ -624,11 +624,11 @@ body.dark-theme {
 
 .fls-preloader__line span {
   display: inline-block;
+  background-color: #ff5753;
+  height: 8px;
   -webkit-transition: width 0.2s ease;
   -o-transition: width 0.2s ease;
   transition: width 0.2s ease;
-  height: 0.8rem;
-  background-color: #7a956b;
 }
 
 [class*=-ibg] {
@@ -2330,6 +2330,10 @@ body.dark-theme {
 }
 
 @media (min-width: 75em) {
+  .fls-preloader__counter {
+    font-size: 5.375rem;
+  }
+
   .label {
     margin-left: 1.875rem;
   }
@@ -2472,6 +2476,10 @@ body.dark-theme {
 }
 
 @media (max-width: 20em) {
+  .fls-preloader__counter {
+    font-size: 2.625rem;
+  }
+
   .label {
     margin-left: 0.9375rem;
   }
@@ -2854,6 +2862,20 @@ body.dark-theme {
 }
 
 @media (min-width: 20em) and (max-width: 75em) {
+@supports (font-size: clamp( 2.625rem , 1.625rem  +  5vw , 5.375rem )) {
+    .fls-preloader__counter {
+      font-size: clamp( 2.625rem , 1.625rem  +  5vw , 5.375rem );
+    }
+}
+
+@supports not (font-size: clamp( 2.625rem , 1.625rem  +  5vw , 5.375rem )) {
+    .fls-preloader__counter {
+      font-size: calc(
+				2.625rem + 2.75 * (100vw - 20rem) / 55
+			);
+    }
+}
+
 @supports (margin-left: clamp( 0.9375rem , 0.5965909091rem  +  1.7045454545vw , 1.875rem )) {
     .label {
       margin-left: clamp( 0.9375rem , 0.5965909091rem  +  1.7045454545vw , 1.875rem );

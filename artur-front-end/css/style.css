@@ -548,14 +548,6 @@ body.dark-theme {
   border-right: 2px solid var(--hoverColorLink);
 }
 
-[data-fullscreen] {
-  min-height: 100vh;
-}
-
-.touch [data-fullscreen] {
-  min-height: calc(var(--vh, 1vh) * 100);
-}
-
 [class*=-ibg] {
   position: relative;
 }
@@ -1681,6 +1673,10 @@ body.dark-theme {
   left: 18px;
 }
 
+.contacts__title {
+  color: var(--mainColor);
+}
+
 .contacts__items {
   display: grid;
   -webkit-column-gap: 1.875rem;
@@ -1689,6 +1685,7 @@ body.dark-theme {
 }
 
 .contacts__description {
+  color: var(--mainColor);
   line-height: 1.5;
   max-width: 46.25rem;
   position: relative;
@@ -1727,8 +1724,12 @@ body.dark-theme {
   margin-bottom: 0.375em;
 }
 
+.contacts__kwork-description {
+  color: var(--mainColor);
+}
+
 .contacts__kwork-description:not(:last-child) {
-  margin-bottom: 1.5625em;
+  margin-bottom: 0.9375em;
 }
 
 .contacts__lists {
@@ -1749,6 +1750,21 @@ body.dark-theme {
   -o-transition: transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.contacts__link {
+  color: var(--mainColor);
+}
+
+.contacts__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  row-gap: 10px;
 }
 
 .portfolio__container {
@@ -2126,9 +2142,9 @@ body.dark-theme {
 
 .filter__button {
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.125rem;
-  padding: 5px;
+  padding: 10px 15px;
 }
 
 .filter__button.active {
@@ -2581,12 +2597,6 @@ body.dark-theme {
 }
 
 @media (max-width: 48.06125em) {
-  .touch [data-fullscreen] {
-    -webkit-transition: height 0.2s;
-    -o-transition: height 0.2s;
-    transition: height 0.2s;
-  }
-
   .btn-indicator__sun {
     margin-right: 30px;
   }

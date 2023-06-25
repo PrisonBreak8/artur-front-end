@@ -1,0 +1,97 @@
+// Общий файл элементов форм
+// Для подключения/отключения стилей конкретного элемента формы смотри base/forms/forms.scss
+@import "base/forms/forms";
+
+// Стилі для повноекранного блоку
+// @import "base/fullscreen";
+
+// Стилі для preloader
+// @import "base/preloader";
+
+// Стилі для кастомного курсору
+// Styles for custom cursor
+// @import "base/cursor";
+
+// Стилі для чуйних картинок (IBG)
+// Сніппет (HTML): ibg (div з картинкою та класами)
+// Сніппет (HTML): ibga (a з картинкою та класами)
+[class*="-ibg"] {
+	position: relative;
+	img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+	}
+}
+[class*="-ibg_contain"] {
+	img {
+		object-fit: contain;
+	}
+}
+// Адаптивне відео
+%responsiveVideo {
+	position: relative;
+	overflow: hidden;
+	height: 0;
+	padding-bottom: 56.25%;
+	width: 100%;
+	video,
+	iframe,
+	object,
+	embed {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+// Відео як фон
+%videoBackground {
+	video,
+	iframe,
+	object,
+	embed {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		min-width: 100%;
+		min-height: 100%;
+		width: auto;
+		height: auto;
+		z-index: -100;
+		transform: translateX(-50%) translateY(-50%);
+		background-size: cover;
+	}
+}
+// Сірий фільтр
+%grayfilter {
+	transition: all 0.3s ease 0s;
+	filter: grayscale(1);
+	@media (any-hover: hover) {
+		&:hover {
+			filter: grayscale(0);
+		}
+	}
+}
+// Скасувати виділення
+%noselect {
+	user-select: none;
+}
+// Дзеркальне відображення
+%mirror {
+	transform: scale(-1, 1);
+}
+// Плавний скролл
+%smoothscroll {
+	-webkit-overflow-scrolling: touch;
+}
+// Сховати скролл
+%hidescroll {
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}

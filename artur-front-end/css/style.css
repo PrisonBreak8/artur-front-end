@@ -444,11 +444,6 @@ h6 {
   --boxShadowCards: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
 }
 
-body {
-  font-weight: 400;
-  background-color: var(--bgColorDark);
-}
-
 body.dark-theme {
   --mainColor: #1e1926;
   --bgColorDark: #fff7ee;
@@ -458,6 +453,11 @@ body.dark-theme {
   --hoverColorButton: #000dc2;
   --boxShadowCards: 0 2px 4px -1px rgba(97, 97, 238, 0.2), 0 4px 5px 0 rgba(196, 109, 191, 0.14),
   	0 1px 10px 0 rgba(159, 159, 204, 0.12);
+}
+
+body {
+  font-weight: 400;
+  background-color: var(--bgColorDark);
 }
 
 .lock body {
@@ -1657,14 +1657,19 @@ body.dark-theme {
   -webkit-column-gap: 1.875rem;
   -moz-column-gap: 1.875rem;
   column-gap: 1.875rem;
+  gap: 0.9375rem;
 }
 
 .contacts__description {
+  position: relative;
   color: var(--mainColor);
   line-height: 1.5;
   max-width: 46.25rem;
-  position: relative;
   opacity: 0;
+}
+
+.contacts__description:not(:last-child) {
+  margin-bottom: 2.5rem;
 }
 
 .contacts__description::before,
@@ -1718,17 +1723,6 @@ body.dark-theme {
   column-gap: 1.875rem;
 }
 
-.contacts__list {
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-}
-
-.contacts__link {
-  color: var(--mainColor);
-}
-
 .contacts__block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1738,6 +1732,204 @@ body.dark-theme {
   -ms-flex-direction: column;
   flex-direction: column;
   row-gap: 10px;
+}
+
+.item-contacts__link {
+  position: relative;
+  display: inline-block;
+}
+
+@-webkit-keyframes colorTelegram {
+  from {
+    stroke: #fcfdff;
+  }
+
+  to {
+    stroke: #229ad5;
+  }
+}
+
+@keyframes colorTelegram {
+  from {
+    stroke: #fcfdff;
+  }
+
+  to {
+    stroke: #229ad5;
+  }
+}
+
+@-webkit-keyframes colorDiscord {
+  from {
+    stroke: #fcfdff;
+  }
+
+  to {
+    stroke: #5865f2;
+  }
+}
+
+@keyframes colorDiscord {
+  from {
+    stroke: #fcfdff;
+  }
+
+  to {
+    stroke: #5865f2;
+  }
+}
+
+@-webkit-keyframes colorViber {
+  from {
+    stroke: #fcfdff;
+  }
+
+  to {
+    stroke: #7360f2;
+  }
+}
+
+@keyframes colorViber {
+  from {
+    stroke: #fcfdff;
+  }
+
+  to {
+    stroke: #7360f2;
+  }
+}
+
+@-webkit-keyframes colorLinkedin {
+  from {
+    stroke: #fcfdff;
+  }
+
+  to {
+    stroke: #0a66c2;
+  }
+}
+
+@keyframes colorLinkedin {
+  from {
+    stroke: #fcfdff;
+  }
+
+  to {
+    stroke: #0a66c2;
+  }
+}
+
+@-webkit-keyframes colorGithub {
+  from {
+    stroke: var(--mainColor);
+  }
+
+  to {
+    stroke: #47474a;
+  }
+}
+
+@keyframes colorGithub {
+  from {
+    stroke: var(--mainColor);
+  }
+
+  to {
+    stroke: #47474a;
+  }
+}
+
+@-webkit-keyframes colorFacebook {
+  from {
+    stroke: #fcfdff;
+  }
+
+  to {
+    stroke: #0f90f3;
+  }
+}
+
+@keyframes colorFacebook {
+  from {
+    stroke: #fcfdff;
+  }
+
+  to {
+    stroke: #0f90f3;
+  }
+}
+
+.item-contacts__circle {
+  fill: none;
+  stroke: var(--mainColor);
+  stroke-width: 0.3125rem;
+  stroke-dasharray: 2.5rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-animation: outWaveOut 1s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+  animation: outWaveOut 1s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+}
+
+.item-contacts__social {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: var(--mainColor);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.item-contacts__social ._icon-telegram,
+.item-contacts__social ._icon-discord,
+.item-contacts__social ._icon-viber,
+.item-contacts__social ._icon-linkedin,
+.item-contacts__social ._icon-github,
+.item-contacts__social ._icon-facebook {
+  position: relative;
+  display: inline-block;
+}
+
+@-webkit-keyframes outWaveIn {
+  to {
+    stroke-width: 10px;
+    stroke-dasharray: 400;
+  }
+}
+
+@keyframes outWaveIn {
+  to {
+    stroke-width: 10px;
+    stroke-dasharray: 400;
+  }
+}
+
+@-webkit-keyframes outWaveOut {
+  from {
+    stroke-width: 10px;
+    stroke-dasharray: 400;
+  }
+
+  to {
+    stroke: var(--mainColor);
+    stroke-width: 5px;
+    stroke-dasharray: 40;
+  }
+}
+
+@keyframes outWaveOut {
+  from {
+    stroke-width: 10px;
+    stroke-dasharray: 400;
+  }
+
+  to {
+    stroke: var(--mainColor);
+    stroke-width: 5px;
+    stroke-dasharray: 40;
+  }
 }
 
 .portfolio__container {
@@ -2306,10 +2498,6 @@ body.dark-theme {
     margin-bottom: 5rem;
   }
 
-  .contacts__items {
-    row-gap: 3.125rem;
-  }
-
   .contacts__items:not(:last-child) {
     margin-bottom: 2.5rem;
   }
@@ -2326,8 +2514,21 @@ body.dark-theme {
     font-size: 1.375rem;
   }
 
-  .contacts__link {
-    font-size: 2.375rem;
+  .item-contacts__link {
+    width: 6.25rem;
+  }
+
+  .item-contacts__link {
+    height: 6.25rem;
+  }
+
+  .item-contacts__social ._icon-telegram,
+  .item-contacts__social ._icon-discord,
+  .item-contacts__social ._icon-viber,
+  .item-contacts__social ._icon-linkedin,
+  .item-contacts__social ._icon-github,
+  .item-contacts__social ._icon-facebook {
+    font-size: 1.625rem;
   }
 
   .portfolio {
@@ -2448,10 +2649,6 @@ body.dark-theme {
     margin-bottom: 2.8125rem;
   }
 
-  .contacts__items {
-    row-gap: 1.875rem;
-  }
-
   .contacts__items:not(:last-child) {
     margin-bottom: 1.875rem;
   }
@@ -2468,8 +2665,21 @@ body.dark-theme {
     font-size: 1.125rem;
   }
 
-  .contacts__link {
-    font-size: 1.75rem;
+  .item-contacts__link {
+    width: 5rem;
+  }
+
+  .item-contacts__link {
+    height: 5rem;
+  }
+
+  .item-contacts__social ._icon-telegram,
+  .item-contacts__social ._icon-discord,
+  .item-contacts__social ._icon-viber,
+  .item-contacts__social ._icon-linkedin,
+  .item-contacts__social ._icon-github,
+  .item-contacts__social ._icon-facebook {
+    font-size: 1.25rem;
   }
 
   .portfolio {
@@ -3011,20 +3221,6 @@ body.dark-theme {
     }
 }
 
-@supports (row-gap: clamp( 1.875rem , 1.4204545455rem  +  2.2727272727vw , 3.125rem )) {
-    .contacts__items {
-      row-gap: clamp( 1.875rem , 1.4204545455rem  +  2.2727272727vw , 3.125rem );
-    }
-}
-
-@supports not (row-gap: clamp( 1.875rem , 1.4204545455rem  +  2.2727272727vw , 3.125rem )) {
-    .contacts__items {
-      row-gap: calc(
-				1.875rem + 1.25 * (100vw - 20rem) / 55
-			);
-    }
-}
-
 @supports (margin-bottom: clamp( 1.875rem , 1.6477272727rem  +  1.1363636364vw , 2.5rem )) {
     .contacts__items:not(:last-child) {
       margin-bottom: clamp( 1.875rem , 1.6477272727rem  +  1.1363636364vw , 2.5rem );
@@ -3081,16 +3277,54 @@ body.dark-theme {
     }
 }
 
-@supports (font-size: clamp( 1.75rem , 1.5227272727rem  +  1.1363636364vw , 2.375rem )) {
-    .contacts__link {
-      font-size: clamp( 1.75rem , 1.5227272727rem  +  1.1363636364vw , 2.375rem );
+@supports (width: clamp( 5rem , 4.5454545455rem  +  2.2727272727vw , 6.25rem )) {
+    .item-contacts__link {
+      width: clamp( 5rem , 4.5454545455rem  +  2.2727272727vw , 6.25rem );
     }
 }
 
-@supports not (font-size: clamp( 1.75rem , 1.5227272727rem  +  1.1363636364vw , 2.375rem )) {
-    .contacts__link {
+@supports not (width: clamp( 5rem , 4.5454545455rem  +  2.2727272727vw , 6.25rem )) {
+    .item-contacts__link {
+      width: calc(
+				5rem + 1.25 * (100vw - 20rem) / 55
+			);
+    }
+}
+
+@supports (height: clamp( 5rem , 4.5454545455rem  +  2.2727272727vw , 6.25rem )) {
+    .item-contacts__link {
+      height: clamp( 5rem , 4.5454545455rem  +  2.2727272727vw , 6.25rem );
+    }
+}
+
+@supports not (height: clamp( 5rem , 4.5454545455rem  +  2.2727272727vw , 6.25rem )) {
+    .item-contacts__link {
+      height: calc(
+				5rem + 1.25 * (100vw - 20rem) / 55
+			);
+    }
+}
+
+@supports (font-size: clamp( 1.25rem , 1.1136363636rem  +  0.6818181818vw , 1.625rem )) {
+    .item-contacts__social ._icon-telegram,
+    .item-contacts__social ._icon-discord,
+    .item-contacts__social ._icon-viber,
+    .item-contacts__social ._icon-linkedin,
+    .item-contacts__social ._icon-github,
+    .item-contacts__social ._icon-facebook {
+      font-size: clamp( 1.25rem , 1.1136363636rem  +  0.6818181818vw , 1.625rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.25rem , 1.1136363636rem  +  0.6818181818vw , 1.625rem )) {
+    .item-contacts__social ._icon-telegram,
+    .item-contacts__social ._icon-discord,
+    .item-contacts__social ._icon-viber,
+    .item-contacts__social ._icon-linkedin,
+    .item-contacts__social ._icon-github,
+    .item-contacts__social ._icon-facebook {
       font-size: calc(
-				1.75rem + 0.625 * (100vw - 20rem) / 55
+				1.25rem + 0.375 * (100vw - 20rem) / 55
 			);
     }
 }
@@ -3433,19 +3667,70 @@ body.dark-theme {
     width: 100%;
   }
 
-  .contacts__list:hover {
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
+  .item-contacts__telegram:hover .item-contacts__circle {
+    fill: #fcfdff;
+    fill-opacity: 1;
+    -webkit-animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards, colorTelegram 1s linear forwards;
+    animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards, colorTelegram 1s linear forwards;
   }
 
-  .contacts__link {
-    -webkit-transition: color 0.3s ease;
-    transition: color 0.3s ease;
+  .item-contacts__telegram:hover .item-contacts__social {
+    color: #229ad5;
   }
 
-  .contacts__link:hover {
-    color: var(--hoverColorLink);
+  .item-contacts__discord:hover .item-contacts__circle {
+    fill: #fcfdff;
+    fill-opacity: 1;
+    -webkit-animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards, colorDiscord 1s linear forwards;
+    animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards, colorDiscord 1s linear forwards;
+  }
+
+  .item-contacts__discord:hover .item-contacts__social {
+    color: #5865f2;
+  }
+
+  .item-contacts__viber:hover .item-contacts__circle {
+    fill: #fcfdff;
+    fill-opacity: 1;
+    -webkit-animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards, colorViber 1s linear forwards;
+    animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards, colorViber 1s linear forwards;
+  }
+
+  .item-contacts__viber:hover .item-contacts__social {
+    color: #7360f2;
+  }
+
+  .item-contacts__linkedin:hover .item-contacts__circle {
+    fill: #fcfdff;
+    fill-opacity: 1;
+    -webkit-animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards, colorLinkedin 1s linear forwards;
+    animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards, colorLinkedin 1s linear forwards;
+  }
+
+  .item-contacts__linkedin:hover .item-contacts__social {
+    color: #0a66c2;
+  }
+
+  .item-contacts__github:hover .item-contacts__circle {
+    fill: #adbac7;
+    fill-opacity: 1;
+    -webkit-animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards, colorGithub 1s linear forwards;
+    animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards, colorGithub 1s linear forwards;
+  }
+
+  .item-contacts__github:hover .item-contacts__social {
+    color: #1c2128;
+  }
+
+  .item-contacts__facebook:hover .item-contacts__circle {
+    fill: #fcfdff;
+    fill-opacity: 1;
+    -webkit-animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards, colorFacebook 1s linear forwards;
+    animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards, colorFacebook 1s linear forwards;
+  }
+
+  .item-contacts__facebook:hover .item-contacts__social {
+    color: #0f90f3;
   }
 
   .portfolio-card:hover::before,

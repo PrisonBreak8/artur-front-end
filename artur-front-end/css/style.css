@@ -2290,18 +2290,161 @@ body {
   justify-content: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  row-gap: 1.25rem;
+  row-gap: 0.625rem;
 }
 
 .filter__button {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  padding: 14px 26px;
+  color: var(--mainColor);
   text-transform: uppercase;
   font-weight: 600;
   font-size: 1.125rem;
-  padding: 10px 15px;
+  -webkit-transition: color 0.3s, -webkit-box-shadow 0.5s;
+  transition: color 0.3s, -webkit-box-shadow 0.5s;
+  transition: box-shadow 0.5s, color 0.3s;
+  transition: box-shadow 0.5s, color 0.3s, -webkit-box-shadow 0.5s;
 }
 
 .filter__button.active {
   color: var(--hoverColorLink);
+}
+
+.filter__button.active span {
+  position: absolute;
+  display: block;
+}
+
+.filter__button.active span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), to(var(--hoverColorLink)));
+  background: linear-gradient(90deg, transparent, var(--hoverColorLink));
+  -webkit-animation: btn-anim1 1s linear infinite;
+  animation: btn-anim1 1s linear infinite;
+}
+
+.filter__button.active span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(var(--hoverColorLink)));
+  background: linear-gradient(180deg, transparent, var(--hoverColorLink));
+  -webkit-animation: btn-anim2 1s linear infinite;
+  animation: btn-anim2 1s linear infinite;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
+}
+
+.filter__button.active span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: -webkit-gradient(linear, right top, left top, from(transparent), to(var(--hoverColorLink)));
+  background: linear-gradient(270deg, transparent, var(--hoverColorLink));
+  -webkit-animation: btn-anim3 1s linear infinite;
+  animation: btn-anim3 1s linear infinite;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.filter__button.active span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(var(--hoverColorLink)));
+  background: linear-gradient(360deg, transparent, var(--hoverColorLink));
+  -webkit-animation: btn-anim4 1s linear infinite;
+  animation: btn-anim4 1s linear infinite;
+  -webkit-animation-delay: 0.75s;
+  animation-delay: 0.75s;
+}
+
+@-webkit-keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+
+  50%, 100% {
+    left: 100%;
+  }
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+
+  50%, 100% {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+
+  50%, 100% {
+    top: 100%;
+  }
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+
+  50%, 100% {
+    top: 100%;
+  }
+}
+
+@-webkit-keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+
+  50%, 100% {
+    right: 100%;
+  }
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+
+  50%, 100% {
+    right: 100%;
+  }
+}
+
+@-webkit-keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+
+  50%, 100% {
+    bottom: 100%;
+  }
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+
+  50%, 100% {
+    bottom: 100%;
+  }
 }
 
 .portfolio-body {
@@ -3746,5 +3889,11 @@ body {
 
   .portfolio-card:hover::after {
     height: 40%;
+  }
+
+  .filter__button:hover {
+    color: var(--hoverColorLink);
+    -webkit-box-shadow: 0 0 0.1875rem var(--hoverColorLink);
+    box-shadow: 0 0 0.1875rem var(--hoverColorLink);
   }
 }

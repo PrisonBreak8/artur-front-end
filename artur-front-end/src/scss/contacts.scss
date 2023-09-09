@@ -48,7 +48,7 @@
 		column-gap: rem(30);
 		gap: rem(15);
 		&:not(:last-child) {
-			@include adaptiveValue("margin-bottom", 40, 30);
+			@include adaptiveValue("margin-bottom", 25, 20);
 		}
 	}
 	// .contacts__description
@@ -121,6 +121,21 @@
 		row-gap: 10px;
 	}
 
+	// .contacts__codepen
+	&__codepen {
+	}
+	// .contacts__codepen-link
+	&__codepen-link {
+		display: inline-block;
+		@media (any-hover: hover) {
+			&:hover {
+				svg {
+					stroke: var(--hoverColorLink);
+				}
+			}
+		}
+	}
+
 	// .contacts__kwork
 	&__kwork {
 	}
@@ -134,8 +149,8 @@
 	&__link {
 		position: relative;
 		display: inline-block;
-		@include adaptiveValue("width", 100, 80);
-		@include adaptiveValue("height", 100, 80);
+		@include adaptiveValue("width", 80, 60);
+		@include adaptiveValue("height", 80, 60);
 	}
 
 	// .item-contacts__telegram

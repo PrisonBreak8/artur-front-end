@@ -468,6 +468,12 @@ body {
   overscroll-behavior: none;
 }
 
+.loaded body {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
 .wrapper {
   min-height: 100%;
   display: -webkit-box;
@@ -1734,6 +1740,10 @@ body {
   row-gap: 10px;
 }
 
+.contacts__codepen-link {
+  display: inline-block;
+}
+
 .item-contacts__link {
   position: relative;
   display: inline-block;
@@ -2642,7 +2652,7 @@ body {
   }
 
   .contacts__items:not(:last-child) {
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5625rem;
   }
 
   .contacts__description {
@@ -2658,11 +2668,11 @@ body {
   }
 
   .item-contacts__link {
-    width: 6.25rem;
+    width: 5rem;
   }
 
   .item-contacts__link {
-    height: 6.25rem;
+    height: 5rem;
   }
 
   .item-contacts__social ._icon-telegram,
@@ -2793,7 +2803,7 @@ body {
   }
 
   .contacts__items:not(:last-child) {
-    margin-bottom: 1.875rem;
+    margin-bottom: 1.25rem;
   }
 
   .contacts__description {
@@ -2809,11 +2819,11 @@ body {
   }
 
   .item-contacts__link {
-    width: 5rem;
+    width: 3.75rem;
   }
 
   .item-contacts__link {
-    height: 5rem;
+    height: 3.75rem;
   }
 
   .item-contacts__social ._icon-telegram,
@@ -3364,16 +3374,16 @@ body {
     }
 }
 
-@supports (margin-bottom: clamp( 1.875rem , 1.6477272727rem  +  1.1363636364vw , 2.5rem )) {
+@supports (margin-bottom: clamp( 1.25rem , 1.1363636364rem  +  0.5681818182vw , 1.5625rem )) {
     .contacts__items:not(:last-child) {
-      margin-bottom: clamp( 1.875rem , 1.6477272727rem  +  1.1363636364vw , 2.5rem );
+      margin-bottom: clamp( 1.25rem , 1.1363636364rem  +  0.5681818182vw , 1.5625rem );
     }
 }
 
-@supports not (margin-bottom: clamp( 1.875rem , 1.6477272727rem  +  1.1363636364vw , 2.5rem )) {
+@supports not (margin-bottom: clamp( 1.25rem , 1.1363636364rem  +  0.5681818182vw , 1.5625rem )) {
     .contacts__items:not(:last-child) {
       margin-bottom: calc(
-				1.875rem + 0.625 * (100vw - 20rem) / 55
+				1.25rem + 0.3125 * (100vw - 20rem) / 55
 			);
     }
 }
@@ -3420,30 +3430,30 @@ body {
     }
 }
 
-@supports (width: clamp( 5rem , 4.5454545455rem  +  2.2727272727vw , 6.25rem )) {
+@supports (width: clamp( 3.75rem , 3.2954545455rem  +  2.2727272727vw , 5rem )) {
     .item-contacts__link {
-      width: clamp( 5rem , 4.5454545455rem  +  2.2727272727vw , 6.25rem );
+      width: clamp( 3.75rem , 3.2954545455rem  +  2.2727272727vw , 5rem );
     }
 }
 
-@supports not (width: clamp( 5rem , 4.5454545455rem  +  2.2727272727vw , 6.25rem )) {
+@supports not (width: clamp( 3.75rem , 3.2954545455rem  +  2.2727272727vw , 5rem )) {
     .item-contacts__link {
       width: calc(
-				5rem + 1.25 * (100vw - 20rem) / 55
+				3.75rem + 1.25 * (100vw - 20rem) / 55
 			);
     }
 }
 
-@supports (height: clamp( 5rem , 4.5454545455rem  +  2.2727272727vw , 6.25rem )) {
+@supports (height: clamp( 3.75rem , 3.2954545455rem  +  2.2727272727vw , 5rem )) {
     .item-contacts__link {
-      height: clamp( 5rem , 4.5454545455rem  +  2.2727272727vw , 6.25rem );
+      height: clamp( 3.75rem , 3.2954545455rem  +  2.2727272727vw , 5rem );
     }
 }
 
-@supports not (height: clamp( 5rem , 4.5454545455rem  +  2.2727272727vw , 6.25rem )) {
+@supports not (height: clamp( 3.75rem , 3.2954545455rem  +  2.2727272727vw , 5rem )) {
     .item-contacts__link {
       height: calc(
-				5rem + 1.25 * (100vw - 20rem) / 55
+				3.75rem + 1.25 * (100vw - 20rem) / 55
 			);
     }
 }
@@ -3808,6 +3818,10 @@ body {
 
   .menu__link:hover::before {
     width: 100%;
+  }
+
+  .contacts__codepen-link:hover svg {
+    stroke: var(--hoverColorLink);
   }
 
   .item-contacts__telegram:hover .item-contacts__circle {

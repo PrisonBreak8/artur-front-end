@@ -36,6 +36,7 @@
 - See my works and join me [my codepen](https://codepen.io/your-work)
 
 
+
 <!-- ---------------------------   -->
 <!--Change the color theme of the website - (choose 2 colors to create a gradient)
 Go to `/src/sass/abstracts/_variables.scss` and only change the values for this variables `$main-color` and `$secondary-color` with your prefered HEX color.

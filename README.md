@@ -2,7 +2,7 @@
 
 <div align="center">
 
- [![GitHub](https://img.shields.io/github/license/PrisonBreak8/artur-front-end?color=red)](https://github.com/PrisonBreak8/artur-front-end/blob/main/LICENSE) [![GitHub](https://img.shields.io/badge/Version-v1.0(Alpha)-brightgreen)](https://prisonbreak8.github.io/artur-front-end/artur-front-end/home.html)  ![GitHub stars](https://img.shields.io/github/stars/PrisonBreak8/artur-front-end) ![GitHub forks](https://img.shields.io/github/forks/PrisonBreak8/artur-front-end)
+ [![GitHub](https://img.shields.io/github/license/PrisonBreak8/artur-front-end?color=red)](https://github.com/PrisonBreak8/artur-front-end/blob/main/LICENSE) [![GitHub](https://img.shields.io/badge/Version-v1.0(Alpha)-brightgreen)](https://prisonbreak8.github.io/artur-front-end/artur-front-end/home.html) [![GitHub stars](https://img.shields.io/github/stars/PrisonBreak8/artur-front-end?color=blue)](https://github.com/PrisonBreak8/artur-front-end/tree/main) [![GitHub forks](https://img.shields.io/github/forks/PrisonBreak8/artur-front-end?color=blue)](https://github.com/PrisonBreak8/artur-front-end/network/members) [![GitHub issues](https://img.shields.io/github/issues/PrisonBreak8/artur-front-end?color=blue)](https://github.com/PrisonBreak8/artur-front-end/issues) [![GitHub pr](https://img.shields.io/github/issues-pr/PrisonBreak8/artur-front-end?color=blue)](https://github.com/PrisonBreak8/artur-front-end/pulls)
 
 </div>
 
@@ -21,15 +21,29 @@ Documentation Here
 - [Personal Portfolio](https://prisonbreak8.github.io/artur-front-end/artur-front-end/home.html)
 
 ## Developers
-- [Artur Goludev](https://github.com/PrisonBreak8)
+
+- **Artur Goludev** - [https://github.com/PrisonBreak8](https://github.com/PrisonBreak8)
 
 ## Preview
 <p align="center">
     <img src="https://github.com/PrisonBreak8/artur-front-end/blob/main/hero-prev.png" alt="My CV page preview" width="800" height="450">
 </p>
 
-### My Codepen
+## License
+- This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
+#### My Codepen
 - See my works and join me [my codepen](https://codepen.io/your-work)
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
+
+<!--Change the color theme of the website - (choose 2 colors to create a gradient)
+Go to `/src/sass/abstracts/_variables.scss` and only change the values for this variables `$main-color` and `$secondary-color` with your prefered HEX color.
+If you want to get some gradients inspiration I highly recommend you to check this website [UI Gradient](https://uigradients.com/#BrightVault)
+
+```scss
+// Default values
+$main-color: #02aab0;
+$secondary-color: #00cdac;
+```
+----->

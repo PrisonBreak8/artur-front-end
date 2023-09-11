@@ -1,11 +1,12 @@
 <h1 align="center"> My Personal Portfolio</h1>
 
-<p align="center">
+<div align="center">
    <img src="https://img.shields.io/badge/Version-v1.0(Alpha)-brightgreen" alt="portfolio version">
    <img src="https://img.shields.io/badge/License-MIT-informational" alt="License">
-   <img src="https://img.shields.io/github/stars/PrisonBreak8/artur-front-end" alt="Stars">
-   <img src="https://img.shields.io/github/forks/PrisonBreak8/artur-front-end" alt="Forks">
-</p>
+
+  ![GitHub stars](https://img.shields.io/github/stars/PrisonBreak8/artur-front-end)
+  ![GitHub forks](https://img.shields.io/github/forks/PrisonBreak8/artur-front-end)
+</div>
 
 <p align="center">
     <img src="https://github.com/PrisonBreak8/artur-front-end/blob/main/hero-prev.png" alt="My CV page preview" width="800" height="450">

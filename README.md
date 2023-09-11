@@ -1,8 +1,8 @@
 <h1 align="center"> My Personal Portfolio</h1>
 
 <div align="center">
-   <img src="https://img.shields.io/badge/Version-v1.0(Alpha)-brightgreen" alt="portfolio version">
-   <img src="https://img.shields.io/badge/License-MIT-informational" alt="License">
+
+   [![GitHub](https://img.shields.io/github/license/cobiwave/simplefolio?color=blue)](https://github.com/PrisonBreak8/artur-front-end/blob/main/LICENSE)  <img src="https://img.shields.io/badge/Version-v1.0(Alpha)-brightgreen" alt="portfolio version">
 
   ![GitHub stars](https://img.shields.io/github/stars/PrisonBreak8/artur-front-end)
   ![GitHub forks](https://img.shields.io/github/forks/PrisonBreak8/artur-front-end)

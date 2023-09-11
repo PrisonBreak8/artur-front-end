@@ -15,7 +15,7 @@
 - Developed first with the desktop methodology,then for mobile.
 
 ## Documentation
-[Check out our awesome Documentation](https://google.com) 
+[Check Documentation "in progress..."](https://google.com) 
 
 ## Distribute
 - [Personal Portfolio](https://prisonbreak8.github.io/artur-front-end/artur-front-end/home.html)

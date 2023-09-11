@@ -14,8 +14,13 @@
 - Smooth scrolling in each section.
 - Developed first with the desktop methodology,then for mobile.
 
-## Documentation
-[Check Documentation "in progress..."](https://google.com) 
+## Contribution Guidelines
+Are we missing any of your favorite features, which you think you can add to it❓ We invite you to contribute to this project and improve it further.
+
+Click on the image below to set up and contribute to the project or [Click here](https://github.com/PrisonBreak8/artur-front-end/blob/main/contributing.md)
+
+<a href = "https://github.com/PrisonBreak8/artur-front-end/blob/master/CONTRIBUTING.md">
+<img src = "./readme_assets/Contribution.png"></a>
 
 ## Distribute
 - [Personal Portfolio](https://prisonbreak8.github.io/artur-front-end/artur-front-end/home.html)
@@ -26,7 +31,7 @@
 
 ## Preview
 <p align="center">
-    <img src="https://github.com/PrisonBreak8/artur-front-end/blob/main/hero-prev.png" alt="My CV page preview" width="800" height="450">
+    <img src="https://github.com/PrisonBreak8/artur-front-end/blob/main/readme-assets/hero-prev.png" alt="My CV page preview" width="800" height="450">
 </p>
 
 ## License
@@ -35,7 +40,8 @@
 #### My Codepen
 - See my works and join me [my codepen](https://codepen.io/your-work)
 
-
+## Documentation
+<!--[**Check Documentation "in progress...**"](https://google.com) -->
 
 <!-- ---------------------------   -->
 <!--Change the color theme of the website - (choose 2 colors to create a gradient)

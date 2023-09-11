@@ -26,7 +26,7 @@ Documentation Here
 
 ## Preview
 <p align="center">
-    <img src="https://github.com/PrisonBreak8/artur-front-end/blob/main/hero-prev.png" alt="My CV page preview" width="800" height="450">
+    <img src="https://github.com/PrisonBreak8/artur-front-end/blob/main/readme-assets/hero-prev.png" alt="My CV page preview" width="800" height="450">
 </p>
 
 ## License

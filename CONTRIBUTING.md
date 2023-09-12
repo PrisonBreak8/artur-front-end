@@ -31,3 +31,19 @@ git clone  https://github.com/<your_user_name>/artur-front-end.git
 ```
 .gif
 
+- Comment on any existing [issue(s)](https://github.com/PrisonBreak8/artur-front-end/issues) raised by **project maintainers**. Otherwise raise a [new issue](https://github.com/PrisonBreak8/artur-front-end/issues/new).
+
+> ### Guidelines for raising a new issue:
+>
+> - Each issue should have an appropriate and short title like "Bug in Experience Page"
+> 
+> - Be specific about your intended changes/suggestions
+>
+> - Attach a screenshot/clip if applicable
+>
+> - Feel free to suggest your opinions on the already raised issues.
+>
+> - I invite all members to suggest new features/bug fixes/improvements and raise new issues for them.
+>
+
+

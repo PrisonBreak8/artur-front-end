@@ -31,6 +31,23 @@ git clone  https://github.com/<your_user_name>/artur-front-end.git
 ```
 .gif
 
+**3.** Navigate to the project directory 📁.
+```
+cd artur-front-end
+```
+**4.** Add a reference to the original repository.
+```
+git remote add upstream https://github.com/PrisonBreak8/artur-front-end.git
+```
+**5.** Check the remotes for this repository.
+```
+git remote -v
+```
+**6.** Always take a pull from the upstream repository to your master branch to keep it at par with the main project(updated repository).
+```
+git pull upstream artur-front-end
+```
+
 - Comment on any existing [issue(s)](https://github.com/PrisonBreak8/artur-front-end/issues) raised by **project maintainers**. Otherwise raise a [new issue](https://github.com/PrisonBreak8/artur-front-end/issues/new).
 
 > ### Guidelines for raising a new issue:

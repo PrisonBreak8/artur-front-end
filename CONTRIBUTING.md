@@ -20,3 +20,14 @@ Make sure to read it here: [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
 - Download recommended for most Users version of [Node Js](https://nodejs.org/en/download)
 - Download and install latest stable version of [VS Code](https://code.visualstudio.com/download)
 
+## Setting up the Project
+**1.**  Fork [this](https://github.com/PrisonBreak8/artur-front-end) repository.
+
+.gif
+
+**2.**  Fork [this](https://github.com/PrisonBreak8/artur-front-end) repository.
+```
+git clone  https://github.com/<your_user_name>/artur-front-end.git
+```
+.gif
+

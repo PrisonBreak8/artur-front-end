@@ -15,12 +15,9 @@
 - Developed first with the desktop methodology,then for mobile.
 
 ## Contribution Guidelines
-Are we missing any of your favorite features, which you think you can add to it❓ We invite you to contribute to this project and improve it further.
+*Do you have any interesting suggestions to make changes to my project*❓ *Are there any new ideas and implementations*❓ *You can suggest your version in my project. I will be glad to any ideas*❗
 
-Click on the image below to set up and contribute to the project or [Click here](https://github.com/PrisonBreak8/artur-front-end/blob/main/contributing.md)
-
-<a href = "https://github.com/PrisonBreak8/artur-front-end/blob/master/CONTRIBUTING.md">
-<img src = "./readme_assets/Contribution.png"></a>
+ ✔️[Click here](https://github.com/PrisonBreak8/artur-front-end/blob/main/contributing.md) **to set up and contribute to the project**
 
 ## Distribute
 - [Personal Portfolio](https://prisonbreak8.github.io/artur-front-end/artur-front-end/home.html)
@@ -39,28 +36,3 @@ Click on the image below to set up and contribute to the project or [Click here]
 
 #### My Codepen
 - See my works and join me [my codepen](https://codepen.io/your-work)
-
-## Documentation
-<!--[**Check Documentation "in progress...**"](https://google.com) -->
-
-<!-- ---------------------------   -->
-<!--Change the color theme of the website - (choose 2 colors to create a gradient)
-Go to `/src/sass/abstracts/_variables.scss` and only change the values for this variables `$main-color` and `$secondary-color` with your prefered HEX color.
-If you want to get some gradients inspiration I highly recommend you to check this website [UI Gradient](https://uigradients.com/#BrightVault)
-
-```scss
-// Default values
-$main-color: #02aab0;
-$secondary-color: #00cdac;
-```
------>
-
-<!--### Experience Page:
-
-<p align="center"><img src="./readme_assets/Experience_Page.gif"></p>-->
-
-
-
-
-
-

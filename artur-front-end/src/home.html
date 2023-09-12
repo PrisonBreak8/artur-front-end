@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"HomePage"
+})
+
+<body>
+	<div class="wrapper">
+
+		@@include('html/_header.htm',{})
+		<main class="page">
+
+			@@include('html/_hero.htm',{})
+
+			@@include('html/_about-me.htm',{})
+
+			@@include('html/_skills.htm',{})
+
+			@@include('html/_portfolio.htm',{})
+
+			@@include('html/_contacts.htm',{})
+
+		</main>
+		@@include('html/_footer.htm',{})
+
+		<a data-goto=".wrapper" data-go-top class="go-top" href="#" title="Go to Top"></a>
+	</div>
+
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

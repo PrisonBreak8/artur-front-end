@@ -25,7 +25,7 @@ Make sure to read it here: [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
 
 .gif
 
-**2.**  Fork [this](https://github.com/PrisonBreak8/artur-front-end) repository.
+**2.**  Clone your forked copy of the project. [this](https://github.com/PrisonBreak8/artur-front-end) repository.
 ```
 git clone  https://github.com/<your_user_name>/artur-front-end.git
 ```
@@ -43,7 +43,7 @@ git remote add upstream https://github.com/PrisonBreak8/artur-front-end.git
 ```
 git remote -v
 ```
-**6.** Always take a pull from the upstream repository to your master branch to keep it at par with the main project(updated repository).
+**6.** Always take a pull from the upstream repository to your master branch to keep it at par with the artur-front-end project(updated repository).
 ```
 git pull upstream artur-front-end
 ```

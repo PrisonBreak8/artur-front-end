@@ -17,10 +17,10 @@
 ## Contribution Guidelines
 *Do you have any interesting suggestions to make changes to my project*❓ *Are there any new ideas and implementations*❓ *You can suggest your version in my project. I will be glad to any ideas*❗
 
- ✔️[Click here](https://github.com/PrisonBreak8/artur-front-end/blob/main/contributing.md) **to set up and contribute to the project**
+ ✔️[Click here](https://github.com/PrisonBreak8/artur-front-end/blob/main/CONTRIBUTING.md) **to set up and contribute to the project**
 
 ## Distribute
-- [Personal Portfolio](https://prisonbreak8.github.io/artur-front-end/artur-front-end/home.html)
+- [My Personal Portfolio](https://prisonbreak8.github.io/artur-front-end/artur-front-end/home.html)
 
 ## Developers
 

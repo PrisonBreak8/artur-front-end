@@ -9,6 +9,7 @@
 		z-index: 10;
 		padding: rem(15) rem(55);
 		letter-spacing: 4px;
+		color: var(--mainColor);
 		transition: all 0.4s;
 		@media (any-hover: hover) {
 			&:hover {
@@ -23,7 +24,9 @@
 			position: absolute;
 			width: rem(25);
 			height: rem(25);
-			transition: width 0.4s, height 0.4s;
+			transition:
+				width 0.4s,
+				height 0.4s;
 			transition-delay: 0.4s;
 		}
 		&::before {

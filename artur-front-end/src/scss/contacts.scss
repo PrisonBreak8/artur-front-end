@@ -42,13 +42,19 @@
 			@include adaptiveValue("margin-bottom", 80, 45);
 		}
 	}
-	// .contacts__items
-	&__items {
+	// .contacts__grid
+	&__grid {
 		display: grid;
-		column-gap: rem(30);
-		gap: rem(15);
-		&:not(:last-child) {
-			@include adaptiveValue("margin-bottom", 25, 20);
+		column-gap: rem(300);
+		@include adaptiveValue("column-gap", 300, 60, 1, $maxWidthContainer, 768);
+		row-gap: rem(30);
+		grid-template-columns: auto;
+		@media (min-width: $mobile) {
+			grid-template-columns: minmax(max-content, min-content) 1fr;
+		}
+		@media (min-width: $tablet) {
+			//grid-template-columns: repeat(3, 1fr);
+			//grid-template-rows: repeat(2, 1fr);
 		}
 	}
 	// .contacts__description
@@ -57,7 +63,7 @@
 		@include adaptiveValue("font-size", 20, 18);
 		color: var(--mainColor);
 		line-height: math.div(30, 20);
-		max-width: rem(740);
+		max-width: rem(840);
 		&:not(:last-child) {
 			margin-bottom: rem(40);
 		}
@@ -145,6 +151,9 @@
 }
 
 .item-contacts {
+	&:not(:last-child) {
+		margin-bottom: rem(30);
+	}
 	// .item-contacts__link
 	&__link {
 		position: relative;
@@ -349,4 +358,105 @@
 			stroke-dasharray: 40;
 		}
 	}
+}
+
+.contact__mail {
+	position: relative;
+	//background-color: var(--bgColorHeaderDark);
+	//padding: 80px 24px 40px;
+	transition: background-color 0.4s;
+}
+
+.contact__form,
+.contact__group {
+	display: grid;
+	row-gap: 25px;
+}
+.contact__form {
+	position: relative;
+}
+.contact__group {
+}
+.contact__box {
+	position: relative;
+	width: 100%;
+	height: 50px;
+}
+.contact__input,
+.contact__button {
+	outline: none;
+	border: none;
+}
+
+.contact__input {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding: 8px 16px;
+	background-color: var(--bgColorHeaderDark);
+	border: var(--email-form-border);
+	color: var(--mainColor);
+
+	transition:
+		border 0.4s,
+		background-color 0.2s;
+}
+
+.contact__input:-webkit-autofill {
+	transition: background-color 5000s ease-in-out 0s;
+	color: var(--mainColor);
+}
+
+.contact__input::placeholder {
+	color: var(--mainColor);
+	transition: opacity 0.2s;
+}
+.contact__input:focus {
+	border: var(--email-form-border-focus);
+}
+
+.contact__label {
+	position: absolute;
+	top: 8px;
+	left: 10px;
+	padding: 8px;
+	color: var(--mainColor);
+	font-size: 12px;
+	background-color: var(--bgColorHeaderDark);
+	pointer-events: none;
+	opacity: 0;
+	transition:
+		top 0.4s,
+		opacity 0.4s,
+		background-color 0.4s;
+}
+.contact__area {
+	position: relative;
+	height: 160px;
+}
+.contact__area textarea {
+	resize: none;
+	padding-top: 1rem;
+}
+
+.contact__input:focus::placeholder {
+	opacity: 0;
+}
+
+.contact__input:focus + .contact__label,
+.contact__input:not(:placeholder-shown).contact__input:not(:focus) + .contact__label {
+	opacity: 1;
+	top: -16px;
+}
+
+.contact__message {
+	position: absolute;
+	bottom: -20px;
+	left: 10px;
+	font-size: 10px;
+}
+
+.contact__send {
+	margin-top: 15px;
+	margin-bottom: 20px;
 }

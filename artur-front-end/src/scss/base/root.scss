@@ -6,6 +6,9 @@
 	--pointerrColorText: #faff11ff;
 	--hoverColorButton: #08fdd8ff;
 	--boxShadowCards: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
+
+	--email-form-border: 2px solid hsla(0, 0%, 100%, 0.3);
+	--email-form-border-focus: 2px solid hsla(0, 0%, 100%, 0.8);
 }
 
 body {
@@ -18,5 +21,8 @@ body {
 		--hoverColorButton: #000dc2;
 		--boxShadowCards: 0 2px 4px -1px rgba(97, 97, 238, 0.2), 0 4px 5px 0 rgba(196, 109, 191, 0.14),
 			0 1px 10px 0 rgba(159, 159, 204, 0.12);
+
+		--email-form-border: 2px solid hsla(263, 21%, 12%, 0.3);
+		--email-form-border-focus: 2px solid hsla(263, 21%, 12%, 0.8);
 	}
 }

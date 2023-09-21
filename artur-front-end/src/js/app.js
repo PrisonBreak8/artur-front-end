@@ -84,6 +84,18 @@ flsScroll.headerScroll();
 */
 flsFunctions.filterGallery();
 
+// Отправка формы на почту Библиотека
+// Документація: https://www.emailjs.com/
+// Сніппет(HTML):
+import './libs/emaillibs.js'
+
+/*
+Модуль "EMAIL JS"
+Документация: https://www.emailjs.com/
+Сниппет (HTML):
+*/
+flsFunctions.libsForSendingFormsEmail();
+
 /*
 Модуль "Кастомний курсор"
 Документация:
